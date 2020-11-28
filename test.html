@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>profile</title>
+<style>
+root:{
+	font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+body,html{
+	height: 100%;
+	width: 100%;
+	background-color: #eee;
+	margin: 0;
+	padding: 0;
+}	
+body{
+overflow-x: hidden;
+}
+*{
+	font-family:"Montserrat", Arial, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	box-sizing: border-box;
+}
+.profile_header{
+	position: fixed;
+    top: -56px;
+    left: 0;
+    z-index: 100;
+	height: 56px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: .2s;
+	background-color: white;
+	box-shadow: 0px 1px 10px -2px rgba(0, 0, 0, 0.15);
+}
+.profile_header_content{
+    width: 100%;
+    font-family: "Montserrat", Arial, sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.profile_header_content{
+	width: 80%;
+	margin: auto;
+}
+.profile_header_content h1{
+	color: #1d82ff;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 20px;
+	font-weight: normal;
+	margin: 0;
+}
+.profile_container{
+	height: 90%;
+	width: 80%;
+	margin: auto;
+	z-index: 10;
+}
+.a_tags{
+
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+}
+.a_tags a{
+	color: #1d82ff;
+	text-decoration: none;
+	padding: 8px 16px;
+}
+.profile_container::before{
+	background: #665fee;
+
+    background: linear-gradient(45deg, #665fee 0%, #27c2de 100%);
+
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.profile_container::after{
+	content: "";
+    position: absolute;
+    bottom: -50px;
+    left: -50px;
+    height: 200px;
+    width: 130%;
+    background-color: #f2f4f9;
+    -webkit-transform: rotate(-4deg);
+    -ms-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+    z-index: 10;
+}
+.flex_right_space{
+	position:  relative;
+	top: 20px;
+	width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+	color: white;
+}
+.first_profile_header{
+	color: white;
+	position: relative;
+	width: 100%;
+	height: 56px;
+	display: flex;
+}
+.first_profile_header_content{
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.first_profile_header_content h1{
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 20px;
+	font-weight: normal;
+}
+.first_a_tags{
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	
+}
+.first_a_tags a{
+	font-size: 15px;
+	padding: 8px 16px;
+	text-decoration: none;
+	color: white
+
+}
+.heading{
+	flex: 0 0 50%;
+    max-width: 50%;
+}
+.heading1{
+	width: 100%;
+}
+.heading1 h2{
+	font-size: 62px;
+	line-height: 1.2;
+	font-weight: 300;
+	margin: 1rem  0;
+}
+.break_point{
+	margin-top: 30px;
+	background-color: #f2f4f9 !important;
+	position: relative;
+	padding-bottom: 120px !important;
+	width: 130%;
+}
+.features{
+	position: relative;
+	width: auto;
+	height: 500px;
+    background-color: #f2f4f9 !important;
+}
+.features::after{
+	content: "";
+    position: absolute;
+    bottom: -100px;
+    left: -50px;
+    height: 200px;
+    width: 130%;
+    background-color: white;
+    -webkit-transform: rotate(-4deg);
+    -ms-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+    z-index: 10;
+}
+.features_container{
+	position: relative;
+	width: 80%;
+	height: 100%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.features_container strong{
+	color: rgba(0,0,0,0.5);
+	font-weight: 300;
+	font-size: 15px;
+	letter-spacing: 3px;
+}
+.features_container h2{
+	font-weight: 100;
+	font-size: 32px;
+	margin: 0;
+	letter-spacing: 3px;
+}
+.white{
+	background-color: white !important;
+}
+.charts{
+	background-color: white;
+	height: 500px;
+	width: 100%;
+}
+</style>
+</head>
+<body>
+<div class="profile_header" id="navbar">
+	<div class="profile_header_content">
+		<h1>hello</h1>
+		<div class="a_tags">
+			<a href="">Home</a>
+			<a href="">Features</a>
+			<a href="">Reviews</a>
+			<a href="">Pricing</a>
+			<a href="">FQA</a>
+			<a href="">Get Started</a>
+		</div>
+	</div>
+</div>
+
+<div class="profile_container">
+	<div class="first_profile_header">
+		<div class="first_profile_header_content">
+			<h1>hello</h1>
+			<div class="first_a_tags">
+				<a href="">Home</a>
+				<a href="">Features</a>
+				<a href="">Reviews</a>
+				<a href="">Pricing</a>
+				<a href="">FQA</a>
+				<a href="">Get Started</a>
+			</div>
+		</div>
+	</div>
+	<div class="flex_right_space">	
+		<div class="heading">
+			<div class="heading1">
+				<h2>Fly makes you faster</h2>
+			</div>	
+		</div>
+	</div>	
+</div>
+<div class="break_point"></div>
+<div class="features">	
+	<div class="features_container">
+		<strong>FEATURES</strong>
+		<h2>App Features</h2>
+	</div>
+</div>
+<div class="break_point white"></div>
+<div class="charts">
+	
+</div>
+<script>
+window.onscroll = function() {
+	var prevScrollpos = window.pageYOffset;
+	if (prevScrollpos> 429) {
+		document.getElementById("navbar").style.top = "0";
+	}else{
+		document.getElementById("navbar").style.top = "-56px";
+	}
+}
+</script>
+</body>
+</html>
